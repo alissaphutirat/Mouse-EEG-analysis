@@ -79,8 +79,8 @@ for_stats_analysis=[];
 %for z=1:3 
 
 for z=1:4 
-     % if isequal(file_list(z).name,"TRIAL2.mat"), continue, end % skips trial 2 for refactory period trial does we dont car about (yet)
-     if isequal(file_list(z).name,"TRIAL 2.mat"), continue, end 
+     if isequal(file_list(z).name,"TRIAL2.mat"), continue, end % skips trial 2 for refactory period trial does we dont car about (yet)
+%      if isequal(file_list(z).name,"TRIAL 2.mat"), continue, end 
      % if isequal(file_list(z).name,"TRIAL 2.mat"), continue, end for 12-23
      % data trials are 'Trial 2.mat w/ a space. Some are without a space
      % ex. 'trial1'
