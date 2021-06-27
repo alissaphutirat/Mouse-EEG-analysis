@@ -11,7 +11,8 @@ clear all
 
 %work 
 
-% folder= 'C:\Users\Henry\MATLAB\Mourad Lab\Mouse_EEG\Data\06-30-2020 Mouse Experiment 1\'; 
+folder= '/Users/laurieryan/MATLAB/Mourad Lab/Mouse-EEG-analysis github/Data/06-30-2020 Mouse Experiment 1/';
+% folder= '/Users/laurieryan/MATLAB/Mourad Lab/Mouse-EEG-analysis github/Data/12-13-2020 Mouse Experiment 1/';
 % folder= 'C:\Users\Henry\MATLAB\Mourad Lab\Mouse_EEG\Data\12-23 Mouse Experiment\'; 
 % folder= 'C:\Users\Henry\MATLAB\Mourad Lab\Mouse_EEG\Data\06-23-2020 Mouse Experiment 2\'; 
 
@@ -31,7 +32,7 @@ clear all
 %   error in loopy line 99: disp(file_list(z).name)now runs to and breaks
 %   on trial 4
 
-folder= 'C:\Users\Henry\MATLAB\Mourad Lab\Mouse_EEG\Data\5-29-20 Mouse Experiment\'; 
+% folder= 'C:\Users\Henry\MATLAB\Mourad Lab\Mouse_EEG\Data\5-29-20 Mouse Experiment\'; 
 % eerror in US diag stim alldata.lightstimdata=data(datastart(lightstim):dataend(lightstim));
 % works with datastart(5):dataend(5)
 
@@ -42,10 +43,10 @@ folder= 'C:\Users\Henry\MATLAB\Mourad Lab\Mouse_EEG\Data\5-29-20 Mouse Experimen
 
 %Change what is in the string depending on which file/files you want to run
 file_list=dir([folder 'TRIAL*.mat']);
-baseline=dir([folder 'Baseline.mat']); % or baseline 1 or baseline 2 depending on trials 
+baseline=dir([folder 'Baseline2.mat']); % or baseline 1 or baseline 2 depending on trials 
 
-% set_channels=[1 2 3 4 7]; % updated so you do not have to change last number (we added code for searching for light). Change ddepending on channel in surgery notes (9?)
-set_channels=[1 2 3 4 9]; % for 12/16 data? 
+set_channels=[1 2 3 4 7]; % updated so you do not have to change last number (we added code for searching for light). Change ddepending on channel in surgery notes (9?)
+% set_channels=[1 2 3 4 9]; % for 12/16 data? 
 ch_names={'V1L','S1L','S1R', 'V1R', 'lightstim'}; %setting up the names that will be assigned in the matrix and the order
 trial_names={' FIRST LIGHT ONLY' 'LIGHT + US' ' SECOND LIGHT ONLY'};
 %plot_cwt=input('Plot CWTs? Y=1 N=2 :'); %CWT will show the frequency breakdown, use 2 if you just want to look at the averages of the EEG
