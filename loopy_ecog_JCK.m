@@ -12,7 +12,11 @@ clear all
 %work 
 
 folder= '/Users/laurieryan/MATLAB/Mourad Lab/Mouse-EEG-analysis github/Data/06-30-2020 Mouse Experiment 1/';
+
+% not working
+
 % folder= '/Users/laurieryan/MATLAB/Mourad Lab/Mouse-EEG-analysis github/Data/12-13-2020 Mouse Experiment 1/';
+
 % folder= 'C:\Users\Henry\MATLAB\Mourad Lab\Mouse_EEG\Data\12-23 Mouse Experiment\'; 
 % folder= 'C:\Users\Henry\MATLAB\Mourad Lab\Mouse_EEG\Data\06-23-2020 Mouse Experiment 2\'; 
 
@@ -43,7 +47,7 @@ folder= '/Users/laurieryan/MATLAB/Mourad Lab/Mouse-EEG-analysis github/Data/06-3
 
 %Change what is in the string depending on which file/files you want to run
 file_list=dir([folder 'TRIAL*.mat']);
-baseline=dir([folder 'Baseline1.mat']); % or baseline 1 or baseline 2 depending on trials 
+baseline=dir([folder 'Baseline2.mat']); % or baseline 1 or baseline 2 depending on trials 
 
 set_channels=[1 2 3 4 7]; % updated so you do not have to change last number (we added code for searching for light). Change ddepending on channel in surgery notes (9?)
 % set_channels=[1 2 3 4 9]; % for 12/16 data? 
